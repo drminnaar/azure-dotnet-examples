@@ -1,8 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Web.Resource;
 using WonderlandWeather.Api.Models;
 
 namespace WonderlandWeather.Api.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public sealed class ForecastsController : ControllerBase
@@ -13,6 +16,7 @@ public sealed class ForecastsController : ControllerBase
     };
 
     [HttpGet]
+    [RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
     public IEnumerable<Forecast> Get()
     {
         return Enumerable
@@ -24,5 +28,13 @@ public sealed class ForecastsController : ControllerBase
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+    }
+
+    [AllowAnonymous]
+    [HttpOptions]
+    public IActionResult GetOptions()
+    {
+        Response.Headers.Add("Allow", "GET,OPTIONS");
+        return NoContent();
     }
 }
