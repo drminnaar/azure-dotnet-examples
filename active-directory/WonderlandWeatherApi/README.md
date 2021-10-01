@@ -117,7 +117,7 @@ The follow steps show how to create a user:
 
 ## App Registration
 
-According to the [official Microsoft Azure documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#register-an-application), 
+According to the [official Microsoft Azure documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#register-an-application),
 
 > Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: your app trusts the Microsoft identity platform, and not the other way around.
 
@@ -373,14 +373,190 @@ Before setting up a Postman Collection to handle Azure AD auth, we need to first
 
   ![app-reg-postman-auth-5](https://user-images.githubusercontent.com/33935506/135548334-01c21b20-69a0-4797-bfc1-7f61421509e8.png)
 
-
 - Take note of both the authorization (v2) and token (v2) endpoints
 
   ![app-reg-postman-auth-6](https://user-images.githubusercontent.com/33935506/135540368-4bbf89ad-f073-46ff-81a3-578ebeb062be.png)
 
 ### Configure Postman
 
+#### Import Postman Files
+
+The project repository has both an environment and collection file that can be imported.
+
+##### Environment File
+
+```json
+// WonderlandWeather.postman_environment.json
+
+{
+ "id": "f14c3d9f-1e19-422c-9ea9-3774efe321d4",
+ "name": "WonderlandWeather",
+ "values": [
+  {
+   "key": "ClientId",
+   "value": "client_id-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+   "enabled": true
+  },
+  {
+   "key": "Scopes",
+   "value": "api://client_id-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/Forecasts.Read",
+   "enabled": true
+  },
+  {
+   "key": "AuthUrl",
+   "value": "https://login.microsoftonline.com/tenant_id-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/oauth2/v2.0/authorize",
+   "enabled": true
+  },
+  {
+   "key": "AccessTokenUrl",
+   "value": "https://login.microsoftonline.com/tenant_id-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/oauth2/v2.0/token",
+   "enabled": true
+  }
+ ],
+ "_postman_variable_scope": "environment",
+ "_postman_exported_at": "2021-10-01T02:54:08.591Z",
+ "_postman_exported_using": "Postman/9.0.2"
+}
+```
+
+##### Collection File
+
+```json
+// Wonderland Weather.postman_collection.json
+
+
+{
+ "info": {
+  "_postman_id": "a625b970-155d-416b-b879-24d520a16249",
+  "name": "Wonderland Weather",
+  "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+ },
+ "item": [
+  {
+   "name": "Forecasts",
+   "item": [
+    {
+     "name": "Get All Forecasts",
+     "request": {
+      "method": "GET",
+      "header": [],
+      "url": {
+       "raw": "https://localhost:5001/forecasts",
+       "protocol": "https",
+       "host": [
+        "localhost"
+       ],
+       "port": "5001",
+       "path": [
+        "forecasts"
+       ]
+      }
+     },
+     "response": []
+    },
+    {
+     "name": "Get Options (no auth)",
+     "request": {
+      "method": "OPTIONS",
+      "header": [],
+      "url": {
+       "raw": "https://localhost:5001/forecasts",
+       "protocol": "https",
+       "host": [
+        "localhost"
+       ],
+       "port": "5001",
+       "path": [
+        "forecasts"
+       ]
+      }
+     },
+     "response": []
+    }
+   ]
+  }
+ ],
+ "auth": {
+  "type": "oauth2",
+  "oauth2": [
+   {
+    "key": "client_authentication",
+    "value": "body",
+    "type": "string"
+   },
+   {
+    "key": "state",
+    "value": "{{$randomUUID}}",
+    "type": "string"
+   },
+   {
+    "key": "accessTokenUrl",
+    "value": "{{AccessTokenUrl}}",
+    "type": "string"
+   },
+   {
+    "key": "clientSecret",
+    "value": "",
+    "type": "string"
+   },
+   {
+    "key": "authUrl",
+    "value": "{{AuthUrl}}",
+    "type": "string"
+   },
+   {
+    "key": "scope",
+    "value": "{{Scopes}}",
+    "type": "string"
+   },
+   {
+    "key": "clientId",
+    "value": "{{ClientId}}",
+    "type": "string"
+   },
+   {
+    "key": "redirect_uri",
+    "value": "https://app.getpostman.com/oauth2/callback",
+    "type": "string"
+   },
+   {
+    "key": "tokenName",
+    "value": "WonderlandWeather",
+    "type": "string"
+   },
+   {
+    "key": "addTokenTo",
+    "value": "header",
+    "type": "string"
+   }
+  ]
+ },
+ "event": [
+  {
+   "listen": "prerequest",
+   "script": {
+    "type": "text/javascript",
+    "exec": [
+     ""
+    ]
+   }
+  },
+  {
+   "listen": "test",
+   "script": {
+    "type": "text/javascript",
+    "exec": [
+     ""
+    ]
+   }
+  }
+ ]
+}
+```
+
 #### Create Collection
+
+As an alternative to importing Postman environment and collection, we can create a new Postman Collection as follows.
 
 - Create a new Postman Collection in Postman called **_Wonderland Weather_**.
 
@@ -445,4 +621,3 @@ Follow the following steps to configure Authorization for Collection:
 - Initiate request. You should see a list of forecasts being returned.
 
   ![get-forecasts-2](https://user-images.githubusercontent.com/33935506/135542439-f77c6f07-efc8-481d-92f2-b82ae42e0a12.png)
-
