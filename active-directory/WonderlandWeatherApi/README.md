@@ -29,7 +29,7 @@ In order to run this protected WebAPI, you will need to ensure the following ste
 - You have configured the WebAPI application with the appropriate registered application details
 - You have completed the section on setting up postman to make api requests to protected WebAPI
 
-Once you have complete all the configuration and setup that has been outlined in thi document, you can run the API as follows:
+Once you have complete all the configuration and setup that has been outlined in this document, you can run the API as follows:
 
 ```bash
 # start API
@@ -109,7 +109,7 @@ The follow steps show how to create a user:
 
 ![create-user-2](https://user-images.githubusercontent.com/33935506/135537827-f7451c9f-0333-442f-ab90-6101132d65b7.png)
 
-- The newly created use should display in your users list
+- The newly created user should display in your users list
 
 ![create-user-3](https://user-images.githubusercontent.com/33935506/135537829-05f70b72-4952-4d9e-b047-67557ca3da8b.png)
 
