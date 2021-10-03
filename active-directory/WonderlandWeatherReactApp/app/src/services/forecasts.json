@@ -1,0 +1,72 @@
+[
+  {
+    "id": "5B2072BE-8AC4-4E19-838F-13221CEA2895",
+    "date": "2021-10-02",
+    "temperatureC": 5,
+    "temperatureF": 40,
+    "summary": "culpa cupidatat laborum voluptate veniam"
+  },
+  {
+    "id": "1FFC815F-1A2C-457D-9595-6BA435EEE94A",
+    "date": "2021-10-01",
+    "temperatureC": 30,
+    "temperatureF": 85,
+    "summary": "cupidatat adipisicing veniam excepteur dolor"
+  },
+  {
+    "id": "1565DC88-2FA9-4B82-9B66-E348870A9A62",
+    "date": "2021-10-02",
+    "temperatureC": 22,
+    "temperatureF": 71,
+    "summary": "incididunt cillum excepteur non elit"
+  },
+  {
+    "id": "27DC5065-C4CD-4EB4-918E-89CB1C514D9F",
+    "date": "2021-10-01",
+    "temperatureC": 23,
+    "temperatureF": 73,
+    "summary": "nisi in non proident id"
+  },
+  {
+    "id": "3D9DCD0D-3DCE-45DB-BFEF-3E97810BADD1",
+    "date": "2021-10-02",
+    "temperatureC": 12,
+    "temperatureF": 53,
+    "summary": "deserunt ut excepteur ad eiusmod"
+  },
+  {
+    "id": "5DA2FC63-80DD-4854-91C4-D4A58C35F43B",
+    "date": "2021-10-03",
+    "temperatureC": 28,
+    "temperatureF": 82,
+    "summary": "minim amet id non elit"
+  },
+  {
+    "id": "AA06BCEE-E1C8-4397-901D-B3688DAC062A",
+    "date": "2021-10-02",
+    "temperatureC": 33,
+    "temperatureF": 91,
+    "summary": "eiusmod anim fugiat mollit ullamco"
+  },
+  {
+    "id": "9EA221DB-0496-40BA-843A-4752E6F54F5B",
+    "date": "2021-10-01",
+    "temperatureC": 36,
+    "temperatureF": 96,
+    "summary": "occaecat nostrud irure Lorem nisi"
+  },
+  {
+    "id": "10728C85-B151-4A14-8C05-3A9F3C28DEEB",
+    "date": "2021-10-03",
+    "temperatureC": 15,
+    "temperatureF": 58,
+    "summary": "velit id sit do ea"
+  },
+  {
+    "id": "0599190B-CB9E-48F0-A426-4091A7749BD8",
+    "date": "2021-10-01",
+    "temperatureC": 29,
+    "temperatureF": 84,
+    "summary": "ullamco proident deserunt adipisicing quis"
+  }
+]
