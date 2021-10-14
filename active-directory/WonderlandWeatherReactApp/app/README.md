@@ -1,10 +1,19 @@
+![az-examples-ad-reactapp](https://user-images.githubusercontent.com/33935506/137251575-d9a0a111-46d4-4687-8a99-5043f1dd49bb.png)
+
 # Azure AD with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using the **_TYPESCRIPT_** template.
+
+## Contents
+
+1. [Description](#description)
+1. [Overview](#overview)
+1. [Screenshots](#screenshots)
+1. [Getting Started](#getting-started)
 
 ## Description
 
-In this example, we will build a React Application that is protected by Azure AD. This example is inspired from the offical [Microsoft example](https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react).
+In this example, we will build a React Application (written in Typescript) that is protected by Azure AD. This example is inspired from the offical [Microsoft example](https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react).
 
 The application is for a fictitious company called Wonderland Weather. The following features comprise the application:
 
@@ -23,6 +32,59 @@ This example demonstrates the following primary topics:
 
 ---
 
+## Overview
+
+The application is for a fictitious company called **_Wonderland Weather_**. Furthermore, the application is comprised of the following primary components:
+
+- React Application
+- Azure AD Tenant and Users
+- Azure AD App Registrations for React application
+
+### React Application
+
+The react application is built using create-react-app and typescript. The primary features of the React application are as follows:
+
+- Sign-in - Uses Azure AD to authenticate user sign-in
+- Profile - Connects to Microsoft GraphQL API to retrieve profile information for signed-in user
+- Forecasts - Provides the functionality to load forecast data from a json file
+
+The React application also demonstrates how to use the following Azure AD React components:
+
+- MSAL (Microsoft Authentication Library)
+  
+  According to the [official documentation](https://www.npmjs.com/package/@azure/msal-react#about)
+
+  > The MSAL library for JavaScript enables client-side JavaScript applications to authenticate users using Azure AD work and school accounts (AAD), Microsoft personal accounts (MSA) and social identity providers like Facebook, Google, LinkedIn, Microsoft accounts, etc. through Azure AD B2C service. It also enables your app to get tokens to access Microsoft Cloud services such as Microsoft Graph.
+
+  To learn more about MSAL, see the [official Microsoft documentation](https://docs.microsoft.com/en-gb/azure/active-directory/develop/msal-overview)
+
+- MsalProvider
+- AuthenticatedTemplate and UnauthenticatedTemplate components
+- How to setup basic routing (React Router) for authenticated and unauthenticated views
+
+### Azure AD Tenant and Users
+
+In order to setup authorization for the React application, we need to have an Azure Tenant (with associated Azure AD) and some test users. This guide will illustrate how to setup a new Tenant (called Wonderland Weather) from scratch. There is also a guide that illustrates how to add users to Azure AD.
+
+The following guides illustrate the above requirements and concepts:
+
+- [Azure AD Tenant Setup]
+- [Azure AD User Setup]
+
+### Azure AD App Registration for React application
+
+An App Registration is the mechanism to enable Azure AD authorization for your applications.
+
+According to the [official Microsoft documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#register-an-application)
+
+> Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: your app trusts the Microsoft identity platform, and not the other way around.
+
+For more information on how to do App Registration for React application, see the following:
+
+- [React Application App Registration]
+
+---
+
 ## Screenshots
 
 ### Landing Page
@@ -37,11 +99,11 @@ This example demonstrates the following primary topics:
 
 ![app-3](https://user-images.githubusercontent.com/33935506/135736350-40006ed3-24a7-4322-b8f9-6b6663b49ddc.png)
 
-### Landing Page
+### Home Page
 
 ![app-4](https://user-images.githubusercontent.com/33935506/135736352-8afa1d4a-8b44-4bc0-bf88-c2c47de249d6.png)
 
-### Landing Page - Load Forecasts
+### Home Page - Load Forecasts
 
 ![app-5](https://user-images.githubusercontent.com/33935506/135736354-f8d7da95-d117-4f7a-bc39-7bffa944306a.png)
 
@@ -59,12 +121,6 @@ This example demonstrates the following primary topics:
 
 ---
 
-## Design
-
-![design](https://user-images.githubusercontent.com/33935506/135556236-7da6783c-6140-4b4c-9cbe-5881a11d5825.png)
-
----
-
 ## Getting Started
 
 In order to run the React application, you will need to ensure the following:
@@ -74,199 +130,56 @@ In order to run the React application, you will need to ensure the following:
 - You have created an **_App Registration_** to protect the React application
 - You have configured the React application with the appropriate registered application details
 
-Once you have complete all the configuration and setup that has been outlined in this document, you can run the API as follows:
+### App Registration
+
+The following steps should be followed to **_CONFIGURE_** application in Azure AD:
+
+1. [Azure AD Tenant Setup]
+1. [Azure AD User Setup]
+1. [React Application App Registration]
+
+### Run Application
+
+The following steps should be followed to **_RUN_** application:
+
+#### Install all NPM modules
+
+From the root of the application (where the package.json file is located), run the following command to install all NPM modules:
 
 ```bash
-# start React application
+npm install
+```
+
+#### Configure '.env' File
+
+All configuration for the application is specified in an environment file. Therefore, you will need to add a `.env` file to the root of application (should be in same folder as package.json).
+
+The `.env` file should resemble the following:
+
+```javascript
+REACT_APP_CLIENTID='<Application (Client) ID from app registration>' // see React app registration guide
+REACT_APP_AUTHORITY='https://login.microsoftonline.com/<Directory (tenant) ID>'
+REACT_APP_REDIRECTURI='http://localhost:3000'
+```
+
+You will need to specify your specific settings in the above file. Please see the [React Application App Registration] guide for more details.
+
+#### Start App
+
+From the root of the application (where the package.json file is located), run the following command to run application:
+
+```bash
 npm start
 ```
 
----
+The application runs at the following address:
 
-## Azure AD Setup
-
-### Create Tenant (optional)
-
-If you would prefer to use a new Tenant over your existing default Tenant, then you can follow the steps in this section.
-
-In this section we will create a new Tenant to represent our fictitious organization called **_Wonderland Weather_**.
-
-#### Manage Tenants
-
-**Steps:**
-
-- Open **_Azure Active Directory_** and select the option to `Manage tenants`
-
-![create-tenant-1](https://user-images.githubusercontent.com/33935506/135533941-e551db0b-f24d-4276-a25f-4340a21800dd.png)
-
-#### Create Tenant - Basics
-
-**Steps:**
-
-- Select the option to `Create` new Tenant.
-
-![create-tenant-2](https://user-images.githubusercontent.com/33935506/135533943-d7fd7f25-9eaa-472b-a965-b42b8e12081f.png)
-
-**Steps:**
-
-- Select the `Azure Active Directory` option.
-- Click `Next: Configuration` button
-
-![create-tenant-3](https://user-images.githubusercontent.com/33935506/135533944-4e85b46d-66b8-4c50-bdcd-8f4948600945.png)
-
-### Create Tenant - Configuration
-
-**Steps:**
-
-- Complete the configuration information for Organization name, Domain name, and Country
-- Click `Next: Review + Create` button
-
-![create-tenant-4](https://user-images.githubusercontent.com/33935506/135533946-ebad87da-af72-46d8-bb7f-0a2a141af8df.png)
-
-### Review & Create
-
-**Steps:**
-
-- Click `Create` button to create Tenant
-
-![create-tenant-5](https://user-images.githubusercontent.com/33935506/135533947-7c21db2b-0bfb-4d36-ab5c-cd42d3ffefb9.png)
-
-![create-tenant-6](https://user-images.githubusercontent.com/33935506/135533950-a4e9976e-1085-4327-8be4-96560e95e35b.png)
-
----
-
-## User Setup
-
-Whether you're using your default Tenant, or a custom Tenant (see above [Azure AD Setup](#azure-ad-setup)),you will need a user in the Tenant that can be used to test React application access.
-
-The follow steps show how to create a user:
-
-- Open Active Directory in preferred Tenant
-- Select `Users` option from side-menu
-- Select option `New user` to start user creation process
-
-![create-user-1](https://user-images.githubusercontent.com/33935506/135537826-bbe9967a-7f4a-42cf-a431-796fb75fbf37.png)
-
-- Complete required user information
-- Click `Create` button to create user
-
-![create-user-2](https://user-images.githubusercontent.com/33935506/135537827-f7451c9f-0333-442f-ab90-6101132d65b7.png)
-
-- The newly created user should display in your users list
-
-![create-user-3](https://user-images.githubusercontent.com/33935506/135537829-05f70b72-4952-4d9e-b047-67557ca3da8b.png)
-
----
-
-## App Registration
-
-According to the [official Microsoft Azure documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#register-an-application),
-
-> Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: your app trusts the Microsoft identity platform, and not the other way around.
-
-The following steps show how to create an App Registration for *Wonderland Weather API*.
-
-### Register App
-
-**Steps:**
-
-- In your Azure AD Tenant, select the `App Registrations` option from the side menu
-- Select `New Registration` option
-
-![app-reg-1](https://user-images.githubusercontent.com/33935506/135735830-ca2f822e-91b5-4d5f-80a7-73773ce278eb.png)
-
-- Provide App Registration information
-- Ensure that you select "Single-page application (SPA) and provide a redirect URI that matches the address of the React application
-- Select `Register` button
-
-![app-reg-2](https://user-images.githubusercontent.com/33935506/135735831-533f67cc-515a-4f40-9114-59b46ff6fd45.png)
-
-- After App Registration is complete, you are direcrect to the Overview of the newly registered application
-- Take note of the Application (client) ID and Directory (tenant) ID as they will be used when we configure our React application
-
-![app-reg-3](https://user-images.githubusercontent.com/33935506/135735833-0321f40b-a453-4f64-b8b4-da04c2604952.png)
-
-- Select the `Authentication` option from the side menu
-- Ensure that redirect URI (<http:localhost:3000>) is provided
-- Ensure that none of the token options are selected
-- Click `Save` if you make any changes
-
-![app-reg-4](https://user-images.githubusercontent.com/33935506/135735834-1bb8f32d-60ee-4827-9b7b-796f1b29b4d8.png)
-
-- Select the `API Permissions` option from side menu. Select the option `Grant admin consent for Wonderland Weather`. This will authorize our React application to make calls to API's like Microsoft Graph.
-
-![app-reg-5](https://user-images.githubusercontent.com/33935506/135735835-00fda1dc-0e90-42e5-9828-09b4602ba93f.png)
-![app-reg-6](https://user-images.githubusercontent.com/33935506/135735836-84c223d7-e1bf-476c-b7e1-9d6201efa4ba.png)
-
-- The status of permissions consent should show as "Granted"
-
-![app-reg-7](https://user-images.githubusercontent.com/33935506/135735837-be20eba7-7952-4017-93d6-0719d2ae92ab.png)
-
----
-
-## React Application Setup
-
-### App.ts
-
-```typescript
-import {
-    AuthenticatedTemplate,
-    UnauthenticatedTemplate,
-} from '@azure/msal-react';
-
-// styles
-import './App.css';
-
-// components
-import { AuthenticatedView } from './features/auth/AuthenticatedView';
-import { UnauthenticatedView } from './features/auth/UnauthenticatedView';
-
-function App() {
-    return (
-        <>
-            <AuthenticatedTemplate>
-                <AuthenticatedView />
-            </AuthenticatedTemplate>
-
-            <UnauthenticatedTemplate>
-                <UnauthenticatedView />
-            </UnauthenticatedTemplate>
-        </>
-    );
-}
-
-export { App };
+```bash
+http://localhost:3000
 ```
 
-### Unauthenticated View
-
-```typescript
-export const UnauthenticatedView = () => {
-    return (
-        <LandingPage />
-    )
-}
-```
-
-### Authenticated View
-
-```typescript
-export const AuthenticatedView = () => {
-    return (
-        <BrowserRouter>
-            <NavBar />
-            <div className='container-fluid px-3 pt-3'>
-                <Route exact path='/' component={HomePage} />
-                <Route exact path='/profile' component={ProfilePage} />
-                <Route exact path='/forecasts' component={HomePage} />
-            </div>
-        </BrowserRouter>
-    );
-};
-```
-
-### Signin
-
-### Signout
-
 ---
+
+[Azure AD Tenant Setup]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApp/app/docs/1-azuread-tenant-setup.md
+[Azure AD User Setup]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApp/app/docs/2-azuread-user-setup.md
+[React Application App Registration]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApp/app/docs/3-reactapp-azuread-appregistration.md
