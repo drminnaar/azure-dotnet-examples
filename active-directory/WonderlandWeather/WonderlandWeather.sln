@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WonderlandWeather.Api", "WonderlandWeatherApi\WonderlandWeather.Api\WonderlandWeather.Api.csproj", "{4F043256-E5FA-46FB-A2CE-1EDC36B411EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F043256-E5FA-46FB-A2CE-1EDC36B411EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F043256-E5FA-46FB-A2CE-1EDC36B411EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F043256-E5FA-46FB-A2CE-1EDC36B411EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F043256-E5FA-46FB-A2CE-1EDC36B411EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {034B0B09-B4AA-4174-9279-2B2E596CADF9}
+	EndGlobalSection
+EndGlobal

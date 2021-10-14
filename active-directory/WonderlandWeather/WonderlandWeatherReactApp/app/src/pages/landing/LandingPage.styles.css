@@ -1,0 +1,16 @@
+.landing-page {
+  background-color: #0078D4 !important;
+  display: flex;
+  /* align-items: center; */
+  height: 100vh;  
+   
+  padding: 20px 80px;
+}
+
+.landing-page .signin {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: auto;
+}

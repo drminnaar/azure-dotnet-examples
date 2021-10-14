@@ -1,0 +1,15 @@
+.spinner {
+  display: flex;
+  height: 100vh;
+  padding: 20px 80px;
+}
+
+.spinner .spinner-border {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #0078D4 !important;
+  margin: auto;
+  width: '4em';
+  height: '4em';
+}
