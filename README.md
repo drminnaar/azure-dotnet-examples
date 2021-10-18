@@ -4,8 +4,8 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 
 ## Contents
 
-- Active Directory
-  
+- Azure Active Directory
+
   - [Wonderland Weather .NET 6 Web API]
 
     An example that shows how to protect a .NET 6 Web API using Azure AD
@@ -18,8 +18,23 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 
     An example application that shows how to protect both a React application and .NET 6 Web API using Azure AD. It also shows how to make authenticated requests from a React application to a .NET 6 Web API
 
+- [Azure Storage]
+  
+  Please see the [Azure Storage] README to see how to use Azure storage emulator in development environment
+
+  - [Azure Storage Queue]
+
+    Please see the [Azure Storage Queue] README to see how to use Azure Storage Queue via Azure CLI and Azure Powershell
+
+    - [Azure Storage Queue - Getting Started]
+
+      A simple example demonstrating some of the most commonly used features of Azure Storage Queue.
+
 ---
 
 [Wonderland Weather .NET 6 Web API]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApi/README.md
 [Wonderland Weather React App]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApp/app/README.md
 [Wonderland Weather Full App]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeather/README.md
+[Azure Storage]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/README.md
+[Azure Storage Queue]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/README.md
+[Azure Storage Queue - getting started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/GettingStarted/README.md
