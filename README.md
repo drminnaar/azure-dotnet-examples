@@ -30,6 +30,10 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 
       A simple example demonstrating some of the most commonly used features of Azure Storage Queue.
 
+    - [Azure Storage Queue - One Way Messaging]
+
+      This example shows how to implement **_One Way Messaging_** through the use of a single **_Producer_** and a single **_Consumer_**.  In this scenario, a **_Producer_** sends a Message to a Queue. A **_Consumer_** of the Queue receives the Message and processes it.
+
 ---
 
 [Wonderland Weather .NET 6 Web API]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApi/README.md
@@ -38,3 +42,4 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 [Azure Storage]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/README.md
 [Azure Storage Queue]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/README.md
 [Azure Storage Queue - getting started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/GettingStarted/README.md
+[Azure Storage Queue - One Way Messaging]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/OneWayMessaging/README.md
