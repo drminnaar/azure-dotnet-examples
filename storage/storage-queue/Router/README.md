@@ -6,6 +6,8 @@ A **_Producer_** sends messages to a single _Queue_ that has a single **_Consume
 
 ![router-design](https://user-images.githubusercontent.com/33935506/138537520-65253078-56f8-463c-bff8-486d17c2532a.png)
 
+---
+
 ## Getting Started
 
 Please see [Azure Storage Queue - Getting Started] guide where I explain how to get started with Azure storage using both an emulator (Azurite) and the actual Azure Storage Service.
@@ -32,6 +34,8 @@ cd .\StorageQueue.Router\
 
 dotnet user-secrets set "ConnectionStrings:StorageQueue" "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;QueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;TableEndpoint=http://127.0.0.1:10002/devstoreaccount1;"
 ```
+
+---
 
 ## Run App
 
@@ -106,6 +110,16 @@ cd .\StorageQueue.Router.Producer\
 
 dotnet run
 ```
+
+---
+
+## Screenshots
+
+![router-running-1](https://user-images.githubusercontent.com/33935506/138540787-10fafda8-0a80-404b-b7ac-d95e1328b3b5.png)
+
+![router-running-2](https://user-images.githubusercontent.com/33935506/138540789-7bb496dd-d55e-44c0-80fc-6db6f513f09f.png)
+
+![router-running-3](https://user-images.githubusercontent.com/33935506/138540791-e66b997e-c298-469c-821c-264f05f50105.png)
 
 ---
 
