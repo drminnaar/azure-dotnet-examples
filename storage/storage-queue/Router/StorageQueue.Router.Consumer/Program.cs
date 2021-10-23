@@ -64,9 +64,9 @@ namespace StorageQueue.Router.Consumer
         private static void DisplayHeader(string queueName)
         {
             AnsiConsole.Clear();
-            AnsiConsole.Render(new Text("AZURE STORAGE QUEUE", new Style(foreground: Color.Lime)).Centered());
-            AnsiConsole.Render(new Text("ROUTER EXAMPLE", new Style(foreground: Color.Lime)).Centered());
-            AnsiConsole.Render(new Text($"CONSUMER - {queueName.ToUpperInvariant()}", new Style(foreground: Color.Lime)).Centered());
+            AnsiConsole.Write(new Text("AZURE STORAGE QUEUE", new Style(foreground: Color.Lime)).Centered());
+            AnsiConsole.Write(new Text("ROUTER EXAMPLE", new Style(foreground: Color.Lime)).Centered());
+            AnsiConsole.Write(new Text($"CONSUMER - {queueName.ToUpperInvariant()}", new Style(foreground: Color.Lime)).Centered());
             AnsiConsole.MarkupLine($"\n\n{Emoji.Known.GreenCircle}[bold lime] CONSUMER STARTED ...[/]");
             Console.WriteLine();
         }
@@ -81,7 +81,7 @@ namespace StorageQueue.Router.Consumer
         private static string PromptQueueDetails()
         {
             AnsiConsole.Clear();
-            AnsiConsole.Render(new Rule("[lime]Queue Details[/]")
+            AnsiConsole.Write(new Rule("[lime]Queue Details[/]")
             {
                 Alignment = Justify.Left
             });

@@ -69,9 +69,9 @@ namespace StorageQueue.Router
         private static void DisplayHeader()
         {
             AnsiConsole.Clear();
-            AnsiConsole.Render(new Text("AZURE STORAGE QUEUE", new Style(foreground: Color.OrangeRed1)).Centered());
-            AnsiConsole.Render(new Text("ROUTER EXAMPLE", new Style(foreground: Color.OrangeRed1)).Centered());
-            AnsiConsole.Render(new Text("ROUTER", new Style(foreground: Color.OrangeRed1)).Centered());
+            AnsiConsole.Write(new Text("AZURE STORAGE QUEUE", new Style(foreground: Color.OrangeRed1)).Centered());
+            AnsiConsole.Write(new Text("ROUTER EXAMPLE", new Style(foreground: Color.OrangeRed1)).Centered());
+            AnsiConsole.Write(new Text("ROUTER", new Style(foreground: Color.OrangeRed1)).Centered());
             AnsiConsole.MarkupLine($"\n\n{Emoji.Known.GreenCircle}[bold orangered1] ROUTER STARTED ...[/]");
             Console.WriteLine();
         }
