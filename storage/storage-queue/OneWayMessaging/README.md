@@ -55,3 +55,7 @@ dotnet run
 **Storage Queue Producer/Consumer Terminals:**
 
 ![storage-queue-direct-message-console](https://user-images.githubusercontent.com/33935506/137874622-8904022a-81a1-4d16-82f9-fe6c3438aa7f.png)
+
+---
+
+[Azure Storage Queue - Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/README.md
