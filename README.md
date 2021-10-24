@@ -38,6 +38,12 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 
       This example shows how to implement a **_Router_** to distribute messages to different queues, based on message criteria.
 
+- Azure CosmosDB
+
+  - [CosmosDB Getting Started]
+
+    A basic example that demonstrates some of the common operations used to interact with CosmosDB.
+
 ---
 
 [Wonderland Weather .NET 6 Web API]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApi/README.md
@@ -48,3 +54,4 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 [Azure Storage Queue - getting started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/GettingStarted/README.md
 [Azure Storage Queue - One Way Messaging]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/OneWayMessaging/README.md
 [Azure Storage Queue - Router]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/Router/README.md
+[CosmosDB Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/cosmosdb/GettingStarted/README.md
