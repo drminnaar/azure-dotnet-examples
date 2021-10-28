@@ -9,4 +9,8 @@
 		<AnalysisMode>Default</AnalysisMode>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.4.0" />
+	</ItemGroup>
+
 </Project>
