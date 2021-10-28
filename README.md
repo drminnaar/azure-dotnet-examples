@@ -1,4 +1,4 @@
-![az-examples](https://user-images.githubusercontent.com/33935506/137255461-4f9d8022-3a9b-43a3-8099-5d1eb26a1ee3.png)
+![az-examples](https://user-images.githubusercontent.com/33935506/139220514-ee957e1b-b7f9-41d6-9824-eb70b8450d61.png)
 
 A catalog of examples showing how to develop solutions using _Microsoft Azure_ and _.NET 6_
 
@@ -44,6 +44,12 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 
     A basic example that demonstrates some of the common operations used to interact with CosmosDB.
 
+- Azure Service Bus
+
+  - [Azure Service Bus - One Way Messaging]
+
+    A basic example that demonstrates how to create a producer that sends messages to a service bus queue, where a consumer receives the message from the queue and processes the message.
+
 ---
 
 [Wonderland Weather .NET 6 Web API]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApi/README.md
@@ -55,3 +61,4 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 [Azure Storage Queue - One Way Messaging]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/OneWayMessaging/README.md
 [Azure Storage Queue - Router]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/Router/README.md
 [CosmosDB Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/cosmosdb/GettingStarted/README.md
+[Azure Service Bus - One Way Messaging]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/OneWayMessaging/README.md
