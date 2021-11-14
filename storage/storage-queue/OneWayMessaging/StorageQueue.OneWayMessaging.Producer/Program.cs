@@ -60,9 +60,9 @@ namespace StorageQueue.OneWayMessaging.Producer
         private static void DisplayHeader()
         {
             AnsiConsole.Clear();
-            AnsiConsole.Render(new Text("AZURE STORAGE QUEUE", new Style(foreground: Color.Yellow2)).Centered());
-            AnsiConsole.Render(new Text("ONE WAY MESSAGING", new Style(foreground: Color.Yellow2)).Centered());
-            AnsiConsole.Render(new Text("PRODUCER", new Style(foreground: Color.Yellow2)).Centered());
+            AnsiConsole.Write(new Text("AZURE STORAGE QUEUE", new Style(foreground: Color.Yellow2)).Centered());
+            AnsiConsole.Write(new Text("ONE WAY MESSAGING", new Style(foreground: Color.Yellow2)).Centered());
+            AnsiConsole.Write(new Text("PRODUCER", new Style(foreground: Color.Yellow2)).Centered());
             AnsiConsole.MarkupLine($"\n\n{Emoji.Known.GreenCircle}[bold yellow2] PRODUCER STARTED ...[/]");
             Console.WriteLine();
         }
@@ -70,7 +70,6 @@ namespace StorageQueue.OneWayMessaging.Producer
         private static void DisplayOutput(Review review)
         {
             var hex = Color.FromConsoleColor(review.ToColor()).ToHex();
-            var type = review.Type.ToUpperInvariant();
             AnsiConsole.Markup($"[bold #{hex}][[{review}]] [/]");
         }
     }

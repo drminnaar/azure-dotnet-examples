@@ -74,7 +74,6 @@ namespace StorageQueue.Router.Consumer
         private static void DisplayOutput(Review review)
         {
             var hex = Color.FromConsoleColor(review.ToColor()).ToHex();
-            var type = review.Type.ToUpperInvariant();
             AnsiConsole.Markup($"[bold #{hex}][[{review}]] [/]");
         }
 

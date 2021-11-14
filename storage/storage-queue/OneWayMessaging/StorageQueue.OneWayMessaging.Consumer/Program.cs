@@ -64,9 +64,9 @@ namespace StorageQueue.OneWayMessaging.Consumer
         private static void DisplayHeader()
         {
             AnsiConsole.Clear();
-            AnsiConsole.Render(new Text("AZURE STORAGE QUEUE", new Style(foreground: Color.Magenta1)).Centered());
-            AnsiConsole.Render(new Text("ONE WAY MESSAGING", new Style(foreground: Color.Magenta1)).Centered());
-            AnsiConsole.Render(new Text("CONSUMER", new Style(foreground: Color.Magenta1)).Centered());
+            AnsiConsole.Write(new Text("AZURE STORAGE QUEUE", new Style(foreground: Color.Magenta1)).Centered());
+            AnsiConsole.Write(new Text("ONE WAY MESSAGING", new Style(foreground: Color.Magenta1)).Centered());
+            AnsiConsole.Write(new Text("CONSUMER", new Style(foreground: Color.Magenta1)).Centered());
             AnsiConsole.MarkupLine($"\n\n{Emoji.Known.GreenCircle}[bold magenta1] CONSUMER STARTED ...[/]");
             Console.WriteLine();
         }
@@ -74,7 +74,6 @@ namespace StorageQueue.OneWayMessaging.Consumer
         private static void DisplayOutput(Review review)
         {
             var hex = Color.FromConsoleColor(review.ToColor()).ToHex();
-            var type = review.Type.ToUpperInvariant();
             AnsiConsole.Markup($"[bold #{hex}][[{review}]] [/]");
         }
     }
