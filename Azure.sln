@@ -1,0 +1,188 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D1114DF2-AEE7-41DF-8FA3-97F80FC18FD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FX", "common\FX\FX.csproj", "{F665475F-3E7D-4E50-9B7A-55D10DEED9B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeData", "common\FakeData\FakeData.csproj", "{7D8A2898-5772-4264-8103-4B6CFC15A9D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceBus", "ServiceBus", "{53D86379-F5A1-4E86-9357-9B4532EF8BCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OneWayMessaging", "OneWayMessaging", "{399CA299-21B2-4EFF-82E6-9574541ABD9E}"
+	ProjectSection(SolutionItems) = preProject
+		service-bus\OneWayMessaging\README.md = service-bus\OneWayMessaging\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBus.OneWayMessaging.Consumer", "service-bus\OneWayMessaging\ServiceBus.OneWayMessaging.Consumer\ServiceBus.OneWayMessaging.Consumer.csproj", "{48E88512-C88B-47C2-8C6A-4CF56612BA67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBus.OneWayMessaging.Producer", "service-bus\OneWayMessaging\ServiceBus.OneWayMessaging.Producer\ServiceBus.OneWayMessaging.Producer.csproj", "{8177CE2E-2FD6-4577-9838-1B0EBFB51973}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PubSub", "PubSub", "{A62E4EB6-905B-49C7-A7AA-8CE67ECA1846}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBus.PubSub.Publisher", "service-bus\PubSub\ServiceBus.PubSub.Publisher\ServiceBus.PubSub.Publisher.csproj", "{539BC294-DE13-4E55-9F20-0CE332EFB9FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBus.PubSub.Subscriber", "service-bus\PubSub\ServiceBus.PubSub.Subscriber\ServiceBus.PubSub.Subscriber.csproj", "{42797339-235E-4F75-A45D-B075BA25DDD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ActiveDirectory", "ActiveDirectory", "{E89C941E-5D2F-4596-93D1-5D2382CDCDDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WonderlandWeatherApi", "WonderlandWeatherApi", "{3FC0F816-CE60-469B-ADEB-388AAD10C1DF}"
+	ProjectSection(SolutionItems) = preProject
+		active-directory\WonderlandWeatherApi\README.md = active-directory\WonderlandWeatherApi\README.md
+		active-directory\WonderlandWeatherApi\Wonderland Weather.postman_collection.json = active-directory\WonderlandWeatherApi\Wonderland Weather.postman_collection.json
+		active-directory\WonderlandWeatherApi\WonderlandWeather.postman_environment.json = active-directory\WonderlandWeatherApi\WonderlandWeather.postman_environment.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WonderlandWeather.Api", "active-directory\WonderlandWeatherApi\WonderlandWeather.Api\WonderlandWeather.Api.csproj", "{CDE0A6B5-CE92-48E0-ACA7-9A88DFACC528}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{5B5782E9-4878-40EF-9EDA-240F13E55B44}"
+	ProjectSection(SolutionItems) = preProject
+		active-directory\WonderlandWeatherApi\docs\1-azuread-tenant-setup.md = active-directory\WonderlandWeatherApi\docs\1-azuread-tenant-setup.md
+		active-directory\WonderlandWeatherApi\docs\2-azuread-user-setup.md = active-directory\WonderlandWeatherApi\docs\2-azuread-user-setup.md
+		active-directory\WonderlandWeatherApi\docs\3-api-azuread-appregistration.md = active-directory\WonderlandWeatherApi\docs\3-api-azuread-appregistration.md
+		active-directory\WonderlandWeatherApi\docs\4-postman-setup.md = active-directory\WonderlandWeatherApi\docs\4-postman-setup.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CosmosDb", "CosmosDb", "{7E116694-73EB-434B-A8A7-EE6DC9682944}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GettingStarted", "GettingStarted", "{96FAB850-6AF7-429F-A2F0-01F48F00CE70}"
+	ProjectSection(SolutionItems) = preProject
+		cosmosdb\GettingStarted\README.md = cosmosdb\GettingStarted\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosDb.GettingStarted", "cosmosdb\GettingStarted\CosmosDb.GettingStarted\CosmosDb.GettingStarted.csproj", "{88A6BCF3-176D-42BE-AD4C-677B73957B54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Storage", "Storage", "{6EBE44A7-530A-44AD-946F-478861FAAA18}"
+	ProjectSection(SolutionItems) = preProject
+		storage\README.md = storage\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StorageQueue", "StorageQueue", "{9AD592A6-D6AE-4A9E-9AC4-DFCCA6BA84C2}"
+	ProjectSection(SolutionItems) = preProject
+		storage\storage-queue\README.md = storage\storage-queue\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GettingStarted", "GettingStarted", "{C34B53EA-98A8-4B7D-BC60-CC2E60EB2094}"
+	ProjectSection(SolutionItems) = preProject
+		storage\storage-queue\GettingStarted\README.md = storage\storage-queue\GettingStarted\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OneWayMessaging", "OneWayMessaging", "{7BECEFCE-F3A6-4165-82B6-81BEB5E7E4FD}"
+	ProjectSection(SolutionItems) = preProject
+		storage\storage-queue\OneWayMessaging\README.md = storage\storage-queue\OneWayMessaging\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Router", "Router", "{79A46E1F-B33C-489D-974B-C562243816B0}"
+	ProjectSection(SolutionItems) = preProject
+		storage\storage-queue\Router\README.md = storage\storage-queue\Router\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageQueue.GettingStarted", "storage\storage-queue\GettingStarted\StorageQueue.GettingStarted\StorageQueue.GettingStarted.csproj", "{44AE84B9-92B9-42E9-8039-FDDD1DBADD3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageQueue.OneWayMessaging.Consumer", "storage\storage-queue\OneWayMessaging\StorageQueue.OneWayMessaging.Consumer\StorageQueue.OneWayMessaging.Consumer.csproj", "{C8802CEB-A7CA-45FA-A89B-CFF929EFB467}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageQueue.OneWayMessaging.Producer", "storage\storage-queue\OneWayMessaging\StorageQueue.OneWayMessaging.Producer\StorageQueue.OneWayMessaging.Producer.csproj", "{49EE8E6F-F1DB-4D1F-8FCE-FB412764BACB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageQueue.Router.Producer", "storage\storage-queue\Router\StorageQueue.Router.Producer\StorageQueue.Router.Producer.csproj", "{97536C17-F74E-487B-BA78-39C558A711A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageQueue.Router.Consumer", "storage\storage-queue\Router\StorageQueue.Router.Consumer\StorageQueue.Router.Consumer.csproj", "{5F280113-C63D-4CCF-904A-C36B535BD6B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageQueue.Router", "storage\storage-queue\Router\StorageQueue.Router\StorageQueue.Router.csproj", "{86785FD4-EB38-4A46-833D-0340AF4E41DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F665475F-3E7D-4E50-9B7A-55D10DEED9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F665475F-3E7D-4E50-9B7A-55D10DEED9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F665475F-3E7D-4E50-9B7A-55D10DEED9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F665475F-3E7D-4E50-9B7A-55D10DEED9B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8A2898-5772-4264-8103-4B6CFC15A9D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8A2898-5772-4264-8103-4B6CFC15A9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8A2898-5772-4264-8103-4B6CFC15A9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8A2898-5772-4264-8103-4B6CFC15A9D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E88512-C88B-47C2-8C6A-4CF56612BA67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E88512-C88B-47C2-8C6A-4CF56612BA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E88512-C88B-47C2-8C6A-4CF56612BA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E88512-C88B-47C2-8C6A-4CF56612BA67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8177CE2E-2FD6-4577-9838-1B0EBFB51973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8177CE2E-2FD6-4577-9838-1B0EBFB51973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8177CE2E-2FD6-4577-9838-1B0EBFB51973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8177CE2E-2FD6-4577-9838-1B0EBFB51973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{539BC294-DE13-4E55-9F20-0CE332EFB9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{539BC294-DE13-4E55-9F20-0CE332EFB9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{539BC294-DE13-4E55-9F20-0CE332EFB9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{539BC294-DE13-4E55-9F20-0CE332EFB9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42797339-235E-4F75-A45D-B075BA25DDD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42797339-235E-4F75-A45D-B075BA25DDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42797339-235E-4F75-A45D-B075BA25DDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42797339-235E-4F75-A45D-B075BA25DDD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE0A6B5-CE92-48E0-ACA7-9A88DFACC528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE0A6B5-CE92-48E0-ACA7-9A88DFACC528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE0A6B5-CE92-48E0-ACA7-9A88DFACC528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE0A6B5-CE92-48E0-ACA7-9A88DFACC528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A6BCF3-176D-42BE-AD4C-677B73957B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A6BCF3-176D-42BE-AD4C-677B73957B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A6BCF3-176D-42BE-AD4C-677B73957B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A6BCF3-176D-42BE-AD4C-677B73957B54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44AE84B9-92B9-42E9-8039-FDDD1DBADD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AE84B9-92B9-42E9-8039-FDDD1DBADD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AE84B9-92B9-42E9-8039-FDDD1DBADD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AE84B9-92B9-42E9-8039-FDDD1DBADD3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8802CEB-A7CA-45FA-A89B-CFF929EFB467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8802CEB-A7CA-45FA-A89B-CFF929EFB467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8802CEB-A7CA-45FA-A89B-CFF929EFB467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8802CEB-A7CA-45FA-A89B-CFF929EFB467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49EE8E6F-F1DB-4D1F-8FCE-FB412764BACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49EE8E6F-F1DB-4D1F-8FCE-FB412764BACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49EE8E6F-F1DB-4D1F-8FCE-FB412764BACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49EE8E6F-F1DB-4D1F-8FCE-FB412764BACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97536C17-F74E-487B-BA78-39C558A711A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97536C17-F74E-487B-BA78-39C558A711A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97536C17-F74E-487B-BA78-39C558A711A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97536C17-F74E-487B-BA78-39C558A711A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F280113-C63D-4CCF-904A-C36B535BD6B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F280113-C63D-4CCF-904A-C36B535BD6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F280113-C63D-4CCF-904A-C36B535BD6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F280113-C63D-4CCF-904A-C36B535BD6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86785FD4-EB38-4A46-833D-0340AF4E41DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86785FD4-EB38-4A46-833D-0340AF4E41DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86785FD4-EB38-4A46-833D-0340AF4E41DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86785FD4-EB38-4A46-833D-0340AF4E41DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F665475F-3E7D-4E50-9B7A-55D10DEED9B2} = {D1114DF2-AEE7-41DF-8FA3-97F80FC18FD1}
+		{7D8A2898-5772-4264-8103-4B6CFC15A9D8} = {D1114DF2-AEE7-41DF-8FA3-97F80FC18FD1}
+		{399CA299-21B2-4EFF-82E6-9574541ABD9E} = {53D86379-F5A1-4E86-9357-9B4532EF8BCC}
+		{48E88512-C88B-47C2-8C6A-4CF56612BA67} = {399CA299-21B2-4EFF-82E6-9574541ABD9E}
+		{8177CE2E-2FD6-4577-9838-1B0EBFB51973} = {399CA299-21B2-4EFF-82E6-9574541ABD9E}
+		{A62E4EB6-905B-49C7-A7AA-8CE67ECA1846} = {53D86379-F5A1-4E86-9357-9B4532EF8BCC}
+		{539BC294-DE13-4E55-9F20-0CE332EFB9FC} = {A62E4EB6-905B-49C7-A7AA-8CE67ECA1846}
+		{42797339-235E-4F75-A45D-B075BA25DDD6} = {A62E4EB6-905B-49C7-A7AA-8CE67ECA1846}
+		{3FC0F816-CE60-469B-ADEB-388AAD10C1DF} = {E89C941E-5D2F-4596-93D1-5D2382CDCDDF}
+		{CDE0A6B5-CE92-48E0-ACA7-9A88DFACC528} = {3FC0F816-CE60-469B-ADEB-388AAD10C1DF}
+		{5B5782E9-4878-40EF-9EDA-240F13E55B44} = {3FC0F816-CE60-469B-ADEB-388AAD10C1DF}
+		{96FAB850-6AF7-429F-A2F0-01F48F00CE70} = {7E116694-73EB-434B-A8A7-EE6DC9682944}
+		{88A6BCF3-176D-42BE-AD4C-677B73957B54} = {96FAB850-6AF7-429F-A2F0-01F48F00CE70}
+		{9AD592A6-D6AE-4A9E-9AC4-DFCCA6BA84C2} = {6EBE44A7-530A-44AD-946F-478861FAAA18}
+		{C34B53EA-98A8-4B7D-BC60-CC2E60EB2094} = {9AD592A6-D6AE-4A9E-9AC4-DFCCA6BA84C2}
+		{7BECEFCE-F3A6-4165-82B6-81BEB5E7E4FD} = {9AD592A6-D6AE-4A9E-9AC4-DFCCA6BA84C2}
+		{79A46E1F-B33C-489D-974B-C562243816B0} = {9AD592A6-D6AE-4A9E-9AC4-DFCCA6BA84C2}
+		{44AE84B9-92B9-42E9-8039-FDDD1DBADD3D} = {C34B53EA-98A8-4B7D-BC60-CC2E60EB2094}
+		{C8802CEB-A7CA-45FA-A89B-CFF929EFB467} = {7BECEFCE-F3A6-4165-82B6-81BEB5E7E4FD}
+		{49EE8E6F-F1DB-4D1F-8FCE-FB412764BACB} = {7BECEFCE-F3A6-4165-82B6-81BEB5E7E4FD}
+		{97536C17-F74E-487B-BA78-39C558A711A9} = {79A46E1F-B33C-489D-974B-C562243816B0}
+		{5F280113-C63D-4CCF-904A-C36B535BD6B3} = {79A46E1F-B33C-489D-974B-C562243816B0}
+		{86785FD4-EB38-4A46-833D-0340AF4E41DA} = {79A46E1F-B33C-489D-974B-C562243816B0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20612B55-9D83-4B9F-A897-EE8CFD4986FA}
+	EndGlobalSection
+EndGlobal
