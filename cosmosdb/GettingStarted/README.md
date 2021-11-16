@@ -1,3 +1,13 @@
+---
+page_type: sample
+languages:
+- C#
+products:
+- Azure
+- Azure CosmosDB
+description: "Demonstrates some of the common operations used to interact with CosmosDB"
+---
+
 # CosmosDB - Getting Started
 
 A basic example that demonstrates some of the common operations used to interact with CosmosDB.
