@@ -1,3 +1,13 @@
+---
+page_type: sample
+languages:
+- C#
+products:
+- Azure
+- Azure Storage Queue
+description: "Demonstrates one-way messaging using Azure Storage Queue"
+---
+
 # Azure Storage - One Way Messaging
 
 This example shows how to implement **_One Way Messaging_** through the use of a single **_Producer_** and a single **_Consumer_**.  In this scenario, a **_Producer_** sends a Message to a Queue. A **_Consumer_** of the Queue receives the Message and processes it.

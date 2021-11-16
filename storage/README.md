@@ -1,3 +1,14 @@
+---
+page_type: sample
+languages:
+- C#
+products:
+- Azure
+- Azure Storage
+- Azure Storage Queue
+description: "Demonstrates how to use both local and cloud Azure Storage "
+---
+
 # Azure Storage
 
 ---

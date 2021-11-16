@@ -1,3 +1,13 @@
+---
+page_type: sample
+languages:
+- C#
+products:
+- Azure
+- Azure Storage Queue
+description: "Demonstrates how to implement a router to route messages to different queues"
+---
+
 # Azure Storage - Router
 
 This example shows how to implement a **_Router_** to distribute messages to different queues, based on message criteria.

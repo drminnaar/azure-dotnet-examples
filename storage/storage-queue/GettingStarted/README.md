@@ -1,3 +1,13 @@
+---
+page_type: sample
+languages:
+- C#
+products:
+- Azure
+- Azure Storage Queue
+description: "Demonstrates some of the most commonly used features of Azure Storage Queue"
+---
+
 # Azure Storage Queue - Getting Started
 
 A simple example demonstrating some of the most commonly used features of Azure Storage Queue.
