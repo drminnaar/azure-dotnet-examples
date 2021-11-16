@@ -49,6 +49,14 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
   - [Azure Service Bus - One Way Messaging]
 
     A basic example that demonstrates how to create a producer that sends messages to a service bus queue, where a consumer receives the message from the queue and processes the message.
+  
+  - [Azure Service Bus - Pub/Sub]
+
+    Demonstrates how to configure topics for publish/subscribe
+
+  - [Azure Service Bus - Pub/Sub With Rules]
+
+    Demonstrates how to configure topics for publish/subscribe using rules like Correlation Rule Filter and SQL Rule Filter
 
 ---
 
@@ -62,3 +70,5 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 [Azure Storage Queue - Router]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/Router/README.md
 [CosmosDB Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/cosmosdb/GettingStarted/README.md
 [Azure Service Bus - One Way Messaging]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/OneWayMessaging/README.md
+[Azure Service Bus - Pub/Sub]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/PubSub/README.md
+[Azure Service Bus - Pub/Sub With Rules]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/PubSubWithRules/README.md
