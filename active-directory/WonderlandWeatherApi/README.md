@@ -1,4 +1,16 @@
-![banner](https://user-images.githubusercontent.com/33935506/137251573-4f86846a-6a74-404d-a05a-38a5bafeff90.png)
+---
+page_type: sample
+languages:
+- Typescript
+- C#
+products:
+- Azure
+- Azure Active Directory
+description: "Demonstrates how to use Azure AD to authorize both a React application and .NET 6 API"
+
+---
+
+# Wonderland Weather .NET 6 API
 
 ---
 
