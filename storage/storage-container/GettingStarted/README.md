@@ -40,7 +40,7 @@ dotnet user-secrets set "ConnectionStrings:StorageQueue" "AccountName=devstoreac
 
 ```powershell
 # change to project folder
-cd .\StorageQueue.GettingStarted\
+cd .\StorageContainer.GettingStarted\
 
 # run project
 dotnet run
