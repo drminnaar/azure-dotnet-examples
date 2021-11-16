@@ -1,4 +1,13 @@
-![az-examples-ad-reactapp-dotnetapi](https://user-images.githubusercontent.com/33935506/137254767-b1542f73-9620-47ba-87e8-c24cf08ca172.png)
+---
+page_type: sample
+languages:
+- Typescript
+- C#
+products:
+- Azure
+- Azure Active Directory
+description: "Demonstrates how to use Azure AD to authorize both a React application and .NET 6 API"
+---
 
 # Wonderland Weather Example
 
