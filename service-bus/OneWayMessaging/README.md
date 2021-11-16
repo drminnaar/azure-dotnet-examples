@@ -251,7 +251,6 @@ dotnet user-secrets set "ConnectionStrings:ServiceBus" $SERVICE_BUS_CONNECTION_S
 ## Run Demo
 
 ```bash
-```bash
 # change to Consumer directory
 cd ./ServiceBus.OneWayMessaging.Consumer/
 dotnet run
