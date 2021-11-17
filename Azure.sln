@@ -103,14 +103,27 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StorageContainer", "StorageContainer", "{67D336C0-0F27-4C67-9E62-0FA80921ED5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GettingStarted", "GettingStarted", "{A99E5791-9D9D-45B3-81DF-3FAC0D196A49}"
+	ProjectSection(SolutionItems) = preProject
+		storage\storage-container\GettingStarted\README.md = storage\storage-container\GettingStarted\README.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageContainer.GettingStarted", "storage\storage-container\GettingStarted\StorageContainer.GettingStarted\StorageContainer.GettingStarted.csproj", "{09DFE7DA-0079-4046-85C3-C2492401909E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TableStorage", "TableStorage", "{5DB767DF-E5B9-466B-B847-924EAFF8DAFC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GettingStarted", "GettingStarted", "{0682237F-9EDA-428C-AE8B-A4350C32A3C8}"
+	ProjectSection(SolutionItems) = preProject
+		storage\table-storage\GettingStarted\README.md = storage\table-storage\GettingStarted\README.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TableStorage.GettingStarted", "storage\table-storage\GettingStarted\TableStorage.GettingStarted\TableStorage.GettingStarted.csproj", "{B0034EBF-D571-4AAA-9FE1-94C3D68CF81C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Crud", "Crud", "{DB6ED07F-E354-4598-A780-772DCC055DF5}"
+	ProjectSection(SolutionItems) = preProject
+		storage\table-storage\Crud\README.md = storage\table-storage\Crud\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TableStorage.CrudApi", "storage\table-storage\Crud\TableStorage.CrudApi\TableStorage.CrudApi.csproj", "{71AD2028-4042-4B43-B809-ED8E8F835BF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -190,6 +203,10 @@ Global
 		{B0034EBF-D571-4AAA-9FE1-94C3D68CF81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0034EBF-D571-4AAA-9FE1-94C3D68CF81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0034EBF-D571-4AAA-9FE1-94C3D68CF81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71AD2028-4042-4B43-B809-ED8E8F835BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71AD2028-4042-4B43-B809-ED8E8F835BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71AD2028-4042-4B43-B809-ED8E8F835BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71AD2028-4042-4B43-B809-ED8E8F835BF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -227,6 +244,8 @@ Global
 		{5DB767DF-E5B9-466B-B847-924EAFF8DAFC} = {6EBE44A7-530A-44AD-946F-478861FAAA18}
 		{0682237F-9EDA-428C-AE8B-A4350C32A3C8} = {5DB767DF-E5B9-466B-B847-924EAFF8DAFC}
 		{B0034EBF-D571-4AAA-9FE1-94C3D68CF81C} = {0682237F-9EDA-428C-AE8B-A4350C32A3C8}
+		{DB6ED07F-E354-4598-A780-772DCC055DF5} = {5DB767DF-E5B9-466B-B847-924EAFF8DAFC}
+		{71AD2028-4042-4B43-B809-ED8E8F835BF8} = {DB6ED07F-E354-4598-A780-772DCC055DF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20612B55-9D83-4B9F-A897-EE8CFD4986FA}
