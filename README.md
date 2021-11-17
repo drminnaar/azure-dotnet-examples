@@ -4,7 +4,7 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 
 ## Contents
 
-- Azure Active Directory
+- **Azure Active Directory**
 
   - [Wonderland Weather .NET 6 Web API]
 
@@ -18,11 +18,11 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 
     An example application that shows how to protect both a React application and .NET 6 Web API using Azure AD. It also shows how to make authenticated requests from a React application to a .NET 6 Web API
 
-- [Azure Storage]
+- **[Azure Storage]**
   
   Please see the [Azure Storage] README to see how to use Azure storage emulator in development environment
 
-  - [Azure Storage Queue]
+  - **[Azure Storage Queue]**
 
     Please see the [Azure Storage Queue] README to see how to use Azure Storage Queue via Azure CLI and Azure Powershell
 
@@ -37,14 +37,30 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
     - [Azure Storage Queue - Router]
 
       This example shows how to implement a **_Router_** to distribute messages to different queues, based on message criteria.
+  
+  - **Azure Storage Blob**
 
-- Azure CosmosDB
+    - [Azure Storage Blob - Getting Started]
+
+      Demonstrates how to use Azure.Storage.Blobs SDK
+
+  - **Azure Storage Table**
+
+    - [Azure Storage Table - Getting Started]
+
+      Demonstrates how to use Azure.Data.Tables SDK
+
+    - [Azure Storage Table - CRUD Web API]
+
+      A .NET 6 API that demonstrates how to use Azure.Data.Tables SDK
+
+- **Azure CosmosDB**
 
   - [CosmosDB Getting Started]
 
     A basic example that demonstrates some of the common operations used to interact with CosmosDB.
 
-- Azure Service Bus
+- **Azure Service Bus**
 
   - [Azure Service Bus - One Way Messaging]
 
@@ -72,3 +88,6 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 [Azure Service Bus - One Way Messaging]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/OneWayMessaging/README.md
 [Azure Service Bus - Pub/Sub]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/PubSub/README.md
 [Azure Service Bus - Pub/Sub With Rules]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/PubSubWithRules/README.md
+[Azure Storage Blob - Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-container/GettingStarted/README.md
+[Azure Storage Table - Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/table-storage/GettingStarted/README.md
+[Azure Storage Table - CRUD Web API]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/table-storage/Crud/README.md
