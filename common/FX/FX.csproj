@@ -10,6 +10,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Azure.Cosmos" Version="4.0.0-preview3" />
 	  <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.5.1" />
 	</ItemGroup>
 
