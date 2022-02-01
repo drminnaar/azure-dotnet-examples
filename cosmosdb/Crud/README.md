@@ -10,7 +10,7 @@ description: "Demonstrates how to build an API with a CosmosDB database"
 
 # CosmosDB - CRUD Example
 
-A basic example that demonstrates some of the common operations used to interact with CosmosDB.
+A .NET 6 Web API that exposes CRUD endpoints to interact with CosmosDB
 
 The following operations are demonstrated:
 

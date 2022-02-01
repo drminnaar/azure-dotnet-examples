@@ -60,6 +60,10 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 
     A basic example that demonstrates some of the common operations used to interact with CosmosDB.
 
+  - [CosmosDB CRUD API]
+
+    A .NET 6 Web API that exposes CRUD endpoints to interact with CosmosDB
+
 - **Azure Service Bus**
 
   - [Azure Service Bus - One Way Messaging]
