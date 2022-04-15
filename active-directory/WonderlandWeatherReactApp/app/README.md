@@ -182,4 +182,4 @@ http://localhost:3000
 
 [Azure AD Tenant Setup]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApp/app/docs/1-azuread-tenant-setup.md
 [Azure AD User Setup]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApp/app/docs/2-azuread-user-setup.md
-[React Application App Registration]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApp/app/docs/3-reactapp-azuread-appregistration.md
+[React Application App Registration]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherReactApp/app/docs/3-reactapp-azuread-appregistration.md
