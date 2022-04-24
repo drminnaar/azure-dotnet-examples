@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    },
+    "logLevel": {
+      "default": "Warning",
+      "ProductManagerFncAppV2.ProductsFunction": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
+}

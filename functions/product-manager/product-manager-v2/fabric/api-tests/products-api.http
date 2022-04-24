@@ -1,0 +1,55 @@
+@host = localhost
+@port = 7072
+@baseUri = http://{{host}}:{{port}}/api
+@accept = application/json
+@contentType = application/json
+
+### Get Product List
+
+GET {{baseUri}}/products
+Accept: {{accept}}
+Content-Type: {{contentType}}
+
+### Get Product By Id
+
+@productId = 123456
+
+GET {{baseUri}}/products/{{productId}}
+Accept: {{accept}}
+Content-Type: {{contentType}}
+
+### Delete Product
+
+@productId = 123456
+
+DELETE {{baseUri}}/products/{{productId}}
+Accept: {{accept}}
+Content-Type: {{contentType}}
+
+### Create Product
+
+POST {{baseUri}}/products
+Accept: {{accept}}
+Content-Type: {{contentType}}
+
+{
+    "title": "Red Cap",
+    "category": "hats",
+    "description": "One of a kind cap",
+    "price": 10.71
+}
+
+### Update Product
+
+@productId = 123456
+
+PUT {{baseUri}}/products/{{productId}}
+Accept: {{accept}}
+Content-Type: {{contentType}}
+
+{
+    "title": "Blue Cap",
+    "category": "hats",
+    "description": "When you're feeling blue",
+    "price": 5.20
+}
