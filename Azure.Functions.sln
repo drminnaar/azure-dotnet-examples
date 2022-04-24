@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "product-manager-v1", "product-manager-v1", "{06996D34-A394-42F3-AD00-7562D6014BA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "product-manager-v2", "product-manager-v2", "{C5238434-E3C4-4DC2-BAAB-66143B429185}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "product-manager-v3", "product-manager-v3", "{4FBE2443-0696-48A0-ABF6-71A5BCC9ED54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "product-manager-v4", "product-manager-v4", "{31FDF080-679A-4EFE-BE6A-51DB402FF1F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagerFncAppV1", "functions\product-manager\product-manager-v1\src\ProductManagerFncAppV1\ProductManagerFncAppV1.csproj", "{F2DBD1A4-7A1A-4B9E-88EE-C9A476999C6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "product-manager", "product-manager", "{295D6927-E1A2-45C9-8C9E-EB5EA674A248}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagerFncAppV2", "functions\product-manager\product-manager-v2\src\ProductManagerFncAppV2\ProductManagerFncAppV2.csproj", "{79650D15-92E1-4552-BD00-18586ACDB041}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagerFncAppV3", "functions\product-manager\product-manager-v3\src\ProductManagerFncAppV3\ProductManagerFncAppV3.csproj", "{73169A6A-7DBC-44A4-BE11-41AE296FDEB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagerFncAppV4", "functions\product-manager\product-manager-v4\src\ProductManagerFncAppV4\ProductManagerFncAppV4.csproj", "{E22DFF86-0545-4726-95A2-55A1A1573F9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{92F67AA3-4160-4166-89BE-DAB27BF41255}"
+	ProjectSection(SolutionItems) = preProject
+		functions\README.md = functions\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "product-manager-v5", "product-manager-v5", "{4661260D-3B9F-4A72-B429-BBA6F773D357}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagerFncAppV5", "functions\product-manager\product-manager-v5\src\ProductManagerFncAppV5\ProductManagerFncAppV5.csproj", "{BA6C0845-A1D1-4AB1-BDE8-E7E384312617}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2DBD1A4-7A1A-4B9E-88EE-C9A476999C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DBD1A4-7A1A-4B9E-88EE-C9A476999C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DBD1A4-7A1A-4B9E-88EE-C9A476999C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DBD1A4-7A1A-4B9E-88EE-C9A476999C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79650D15-92E1-4552-BD00-18586ACDB041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79650D15-92E1-4552-BD00-18586ACDB041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79650D15-92E1-4552-BD00-18586ACDB041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79650D15-92E1-4552-BD00-18586ACDB041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73169A6A-7DBC-44A4-BE11-41AE296FDEB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73169A6A-7DBC-44A4-BE11-41AE296FDEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73169A6A-7DBC-44A4-BE11-41AE296FDEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73169A6A-7DBC-44A4-BE11-41AE296FDEB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E22DFF86-0545-4726-95A2-55A1A1573F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E22DFF86-0545-4726-95A2-55A1A1573F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E22DFF86-0545-4726-95A2-55A1A1573F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E22DFF86-0545-4726-95A2-55A1A1573F9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6C0845-A1D1-4AB1-BDE8-E7E384312617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6C0845-A1D1-4AB1-BDE8-E7E384312617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6C0845-A1D1-4AB1-BDE8-E7E384312617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6C0845-A1D1-4AB1-BDE8-E7E384312617}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06996D34-A394-42F3-AD00-7562D6014BA1} = {295D6927-E1A2-45C9-8C9E-EB5EA674A248}
+		{C5238434-E3C4-4DC2-BAAB-66143B429185} = {295D6927-E1A2-45C9-8C9E-EB5EA674A248}
+		{4FBE2443-0696-48A0-ABF6-71A5BCC9ED54} = {295D6927-E1A2-45C9-8C9E-EB5EA674A248}
+		{31FDF080-679A-4EFE-BE6A-51DB402FF1F2} = {295D6927-E1A2-45C9-8C9E-EB5EA674A248}
+		{F2DBD1A4-7A1A-4B9E-88EE-C9A476999C6B} = {06996D34-A394-42F3-AD00-7562D6014BA1}
+		{79650D15-92E1-4552-BD00-18586ACDB041} = {C5238434-E3C4-4DC2-BAAB-66143B429185}
+		{73169A6A-7DBC-44A4-BE11-41AE296FDEB7} = {4FBE2443-0696-48A0-ABF6-71A5BCC9ED54}
+		{E22DFF86-0545-4726-95A2-55A1A1573F9D} = {31FDF080-679A-4EFE-BE6A-51DB402FF1F2}
+		{4661260D-3B9F-4A72-B429-BBA6F773D357} = {295D6927-E1A2-45C9-8C9E-EB5EA674A248}
+		{BA6C0845-A1D1-4AB1-BDE8-E7E384312617} = {4661260D-3B9F-4A72-B429-BBA6F773D357}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E37826F0-779C-41DC-ACEE-F828777AC080}
+	EndGlobalSection
+EndGlobal

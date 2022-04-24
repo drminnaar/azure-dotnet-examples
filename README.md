@@ -64,6 +64,22 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 
     A .NET 6 Web API that exposes CRUD endpoints to interact with CosmosDB
 
+- **[Azure Functions]**
+
+  [Please find more detailed information about the Azure Function projects here.](https://github.com/drminnaar/azure-dotnet-examples/blob/main/functions/README.md)
+
+  - Product Manager
+
+    This project demonstrates how to develop an Azure Function application that can be used to manage a catalog of products. There are multiple versions of the same project where each new version increases in functionality and complexity.
+    
+    Please see the following specific versions to learn more:
+
+    - [Product Manager Func V1]
+    - [Product Manager Func V2]
+    - [Product Manager Func V3]
+    - [Product Manager Func V4]
+    - [Product Manager Func V5]
+
 - **Azure Service Bus**
 
   - [Azure Service Bus - One Way Messaging]
@@ -83,15 +99,27 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 [Wonderland Weather .NET 6 Web API]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApi/README.md
 [Wonderland Weather React App]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeatherApp/app/README.md
 [Wonderland Weather Full App]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/active-directory/WonderlandWeather/README.md
+
 [Azure Storage]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/README.md
 [Azure Storage Queue]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/README.md
 [Azure Storage Queue - getting started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/GettingStarted/README.md
 [Azure Storage Queue - One Way Messaging]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/OneWayMessaging/README.md
 [Azure Storage Queue - Router]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/Router/README.md
+
 [CosmosDB Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/cosmosdb/GettingStarted/README.md
+
 [Azure Service Bus - One Way Messaging]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/OneWayMessaging/README.md
 [Azure Service Bus - Pub/Sub]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/PubSub/README.md
 [Azure Service Bus - Pub/Sub With Rules]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/PubSubWithRules/README.md
+
 [Azure Storage Blob - Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-container/GettingStarted/README.md
+
 [Azure Storage Table - Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/table-storage/GettingStarted/README.md
 [Azure Storage Table - CRUD Web API]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/table-storage/Crud/README.md
+
+[Azure Functions]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/functions/README.md
+[Product Manager Func V1]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/functions/product-manager/product-manager-v1/README.md
+[Product Manager Func V2]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/functions/product-manager/product-manager-v2/README.md
+[Product Manager Func V3]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/functions/product-manager/product-manager-v3/README.md
+[Product Manager Func V4]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/functions/product-manager/product-manager-v4/README.md
+[Product Manager Func V5]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/functions/product-manager/product-manager-v5/README.md

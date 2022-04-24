@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagerFncAppV1", "product-manager-v1\src\ProductManagerFncAppV1\ProductManagerFncAppV1.csproj", "{A414D9AB-FFB9-4BD1-BB01-56D0D64B8C6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagerFncAppV2", "product-manager-v2\src\ProductManagerFncAppV2\ProductManagerFncAppV2.csproj", "{7979E8D7-952F-4CA6-B333-6B6DB878C6AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagerFncAppV3", "product-manager-v3\src\ProductManagerFncAppV3\ProductManagerFncAppV3.csproj", "{51A5679A-7D25-42D0-AB77-419829E85945}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagerFncAppV4", "product-manager-v4\src\ProductManagerFncAppV4\ProductManagerFncAppV4.csproj", "{3307B49A-850F-4F8D-B7C5-E0ABBEB5C2FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagerFncAppV5", "product-manager-v5\src\ProductManagerFncAppV5\ProductManagerFncAppV5.csproj", "{5ED5416F-8222-47EA-8601-E9015B2E9610}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A414D9AB-FFB9-4BD1-BB01-56D0D64B8C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A414D9AB-FFB9-4BD1-BB01-56D0D64B8C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A414D9AB-FFB9-4BD1-BB01-56D0D64B8C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A414D9AB-FFB9-4BD1-BB01-56D0D64B8C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7979E8D7-952F-4CA6-B333-6B6DB878C6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7979E8D7-952F-4CA6-B333-6B6DB878C6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7979E8D7-952F-4CA6-B333-6B6DB878C6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7979E8D7-952F-4CA6-B333-6B6DB878C6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A5679A-7D25-42D0-AB77-419829E85945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A5679A-7D25-42D0-AB77-419829E85945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A5679A-7D25-42D0-AB77-419829E85945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A5679A-7D25-42D0-AB77-419829E85945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3307B49A-850F-4F8D-B7C5-E0ABBEB5C2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3307B49A-850F-4F8D-B7C5-E0ABBEB5C2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3307B49A-850F-4F8D-B7C5-E0ABBEB5C2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3307B49A-850F-4F8D-B7C5-E0ABBEB5C2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED5416F-8222-47EA-8601-E9015B2E9610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED5416F-8222-47EA-8601-E9015B2E9610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED5416F-8222-47EA-8601-E9015B2E9610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED5416F-8222-47EA-8601-E9015B2E9610}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E28ED01A-96E4-47D6-A606-DE6AB881C5A9}
+	EndGlobalSection
+EndGlobal
