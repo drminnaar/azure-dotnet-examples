@@ -1,0 +1,17 @@
+{
+    "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    },
+    "logLevel": {
+      "ProductManagerFncAppV5.ProductsFunction": "Information",
+      "ProductManagerFncAppV5.ProductImageResizeFunction": "Information",
+      "ProductManagerFncAppV5.SeedFunction": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
+}
