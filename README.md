@@ -107,6 +107,7 @@ A catalog of examples showing how to develop solutions using _Microsoft Azure_ a
 [Azure Storage Queue - Router]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/storage/storage-queue/Router/README.md
 
 [CosmosDB Getting Started]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/cosmosdb/GettingStarted/README.md
+[CosmosDB CRUD API]: https://github.com/drminnaar/azure-dotnet-examples/tree/main/cosmosdb/Crud
 
 [Azure Service Bus - One Way Messaging]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/OneWayMessaging/README.md
 [Azure Service Bus - Pub/Sub]: https://github.com/drminnaar/azure-dotnet-examples/blob/main/service-bus/PubSub/README.md
